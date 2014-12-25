@@ -1,0 +1,199 @@
+ 2014-12-09 17:40:51,547 (com.mail.services.DBServer:65)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 17:41:57,929 (com.mail.services.DBServer:55) ERROR - 数据库异常
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:357)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2479)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2516)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2301)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at com.mail.services.DBServer.execute(DBServer.java:49)
+	at com.mail.main.StartServer.main(StartServer.java:28)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:525)
+	at java.net.Socket.connect(Socket.java:475)
+	at java.net.Socket.<init>(Socket.java:372)
+	at java.net.Socket.<init>(Socket.java:215)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+	... 16 more
+ 2014-12-09 17:42:24,923 (com.mail.services.DBServer:55) ERROR - 数据库异常
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:357)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2479)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2516)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2301)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at com.mail.services.DBServer.execute(DBServer.java:49)
+	at com.mail.main.StartServer.main(StartServer.java:28)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:525)
+	at java.net.Socket.connect(Socket.java:475)
+	at java.net.Socket.<init>(Socket.java:372)
+	at java.net.Socket.<init>(Socket.java:215)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+	... 16 more
+ 2014-12-09 17:42:57,661 (com.mail.services.DBServer:55) ERROR - 数据库异常
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:357)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2479)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2516)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2301)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at com.mail.services.DBServer.execute(DBServer.java:49)
+	at com.mail.main.StartServer.main(StartServer.java:28)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:525)
+	at java.net.Socket.connect(Socket.java:475)
+	at java.net.Socket.<init>(Socket.java:372)
+	at java.net.Socket.<init>(Socket.java:215)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+	... 16 more
+ 2014-12-09 17:44:11,499 (com.mail.services.DBServer:54) ERROR - 数据库异常
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1121)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:357)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2479)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2516)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2301)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:416)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:346)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:207)
+	at com.mail.services.DBServer.execute(DBServer.java:48)
+	at com.mail.main.StartServer.main(StartServer.java:28)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:525)
+	at java.net.Socket.connect(Socket.java:475)
+	at java.net.Socket.<init>(Socket.java:372)
+	at java.net.Socket.<init>(Socket.java:215)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:307)
+	... 16 more
+ 2014-12-09 17:44:11,502 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：1s
+ 2014-12-09 17:44:48,056 (com.mail.services.DBServer:54) ERROR - 数据库异常Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+ 2014-12-09 17:44:48,058 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：1s
+ 2014-12-09 17:45:48,147 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 17:46:48,156 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 17:47:48,163 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 17:48:48,170 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 17:49:48,177 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 17:50:48,187 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 18:11:12,456 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 18:34:22,700 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 18:35:23,286 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 18:36:24,131 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 18:37:24,749 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 18:38:25,399 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-09 18:39:25,823 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-10 09:16:56,577 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-10 09:17:07,730 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-10 09:18:08,528 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-10 09:19:09,186 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-10 09:20:30,769 (com.mail.services.DBServer:54) ERROR - 数据库异常IO 错误: The Network Adapter could not establish the connection
+ 2014-12-10 09:20:30,769 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：21s
+ 2014-12-10 09:21:31,516 (com.mail.services.DBServer:54) ERROR - 数据库异常IO 错误: The Network Adapter could not establish the connection
+ 2014-12-10 09:21:31,521 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：21s
+ 2014-12-10 09:22:52,855 (com.mail.services.DBServer:54) ERROR - 数据库异常IO 错误: The Network Adapter could not establish the connection
+ 2014-12-10 09:22:52,856 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：21s
+ 2014-12-10 09:23:53,629 (com.mail.services.DBServer:66)  INFO - 从连接数据到执行sql耗时：0s
+ 2014-12-10 09:25:26,238 (com.mail.services.DBServer:55) ERROR - 数据库异常IO 错误: The Network Adapter could not establish the connection
+ 2014-12-10 09:25:26,240 (com.mail.services.DBServer:67)  INFO - 从连接数据到执行sql耗时：21s
+ 2014-12-10 09:29:18,442 (com.mail.services.DBServer:74)  INFO - 从连接数据到执行sql耗时：21s
+ 2014-12-10 09:30:39,451 (com.mail.services.DBServer:74)  INFO - 从连接数据到执行sql耗时：21s
+ 2014-12-10 09:32:00,449 (com.mail.services.DBServer:74)  INFO - 从连接数据到执行sql耗时：20s
+ 2014-12-11 09:35:51,518 (com.mail.services.DBServer:57) ERROR - 数据库异常IO 错误: The Network Adapter could not establish the connection
+ 2014-12-11 09:35:51,532 (com.mail.services.DBServer:72)  INFO - 从连接数据到执行sql耗时：21s
+ 2014-12-11 09:37:14,231 (com.mail.services.DBServer:57) ERROR - 数据库异常IO 错误: The Network Adapter could not establish the connection
+ 2014-12-11 09:37:14,231 (com.mail.services.DBServer:72)  INFO - 从连接数据到执行sql耗时：22s
